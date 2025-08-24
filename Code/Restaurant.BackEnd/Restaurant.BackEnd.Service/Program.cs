@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using Restaurant.BackEnd.Service;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Get connection string from appsetting.json
@@ -5,6 +8,8 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 
 
 // Register AppDbContext with Dependency Injection (DI)
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(connectionString));
 
 // Configure JSON serialization to handle reference loops
 
