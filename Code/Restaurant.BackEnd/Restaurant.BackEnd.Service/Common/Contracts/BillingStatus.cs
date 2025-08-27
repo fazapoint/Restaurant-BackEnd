@@ -2,12 +2,10 @@ using System.ComponentModel; // to create description that can be more human rea
 
 namespace Restaurant.BackEnd.Service.Common.Contracts
 {
-    public enum OrderStatus
+    public enum BillingStatus
     {
         Open,
-        Pending,
-        InProgress,
-        Completed,
-        Cancelled
+        WaitingBilling,
+        Paid
     }
 }

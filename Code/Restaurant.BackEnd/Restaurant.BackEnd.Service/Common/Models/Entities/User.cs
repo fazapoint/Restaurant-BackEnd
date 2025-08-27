@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Identity;
+using Restaurant.BackEnd.Service.Common.Templates;
 
 namespace Restaurant.BackEnd.Service.Common.Models.Entities
 {

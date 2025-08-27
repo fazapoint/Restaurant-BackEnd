@@ -37,7 +37,7 @@ app.UseHsts(); // HTTP Strict Transport Security (HSTS)
 
 app.UseCors("AllowReactApp"); // Enable CORS here
 
-
+Console.WriteLine("I am Faza");
 // line after app.Run() will never be executed
 app.Run();
 

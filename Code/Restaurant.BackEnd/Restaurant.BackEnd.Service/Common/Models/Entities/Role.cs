@@ -2,11 +2,8 @@ using Restaurant.BackEnd.Service.Common.Templates;
 
 namespace Restaurant.BackEnd.Service.Common.Models.Entities
 {
-    public class Category : EntityBase
+    public class Role : EntityBase
     {
         public string Name { get; set; }
-
-        // Navigation property
-        public virtual List<Menu> Menus { get; set; } = new List<Menu>();
     }
 }

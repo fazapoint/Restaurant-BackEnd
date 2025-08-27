@@ -1,4 +1,4 @@
-namespace Restaurant.BackEnd.Service.Common.Models.Entities
+namespace Restaurant.BackEnd.Service.Common.Templates
 {
     public abstract class EntityBase
     {
